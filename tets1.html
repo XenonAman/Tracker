@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="a">
+    </div>
+
+    <script>
+        var mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        var d = new Date();
+        var day = (d.getDate()<10) ? "0" + d.getDate() : d.getDate() 
+        var hr = (d.getHours()<10) ? "0" + d.getHours() : d.d.getHours() 
+        var min = (d.getMinutes()<10) ? "0" + d.getMinutes() : d.getMinutes()
+        var fileName = day +"-"+mon[d.getMonth()]+"-"+d.getFullYear()+" | "+hr+" : "+min;
+        alert(fileName)
+    </script>
+</body>
+</html>
